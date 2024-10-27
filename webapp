@@ -1,0 +1,11 @@
+Create the web App
+# render.yaml (optional but recommended)
+services:
+  - type: web
+    name: rana-air-api
+    env: go
+    buildCommand: go build -o main
+    startCommand: ./main
+    envVars:
+      - key: PORT
+        value: 8080
